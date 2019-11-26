@@ -7,7 +7,7 @@ import json
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
 base_url = 'https://www.bureaubureau.dk'
-start_url = 'https://www.bureaubureau.dk/soeg/bureautype/webbureau'
+start_url = 'https://www.bureaubureau.dk/soeg/bureautype/Digitale+bureauer'
 
 response = requests.get(start_url, verify=False)
 soup = BeautifulSoup(response.text, features='lxml')
